@@ -25,10 +25,10 @@ public class TripleLinear extends Function {
 	public float applyFunction(float x, boolean clamp) {
 		float y = 0;
 		if (a < c) {
-			if (x < a || ((Float)x).equals(a)) {
+			if (Float.compare(x, a) <= 0) {
 				y = PApplet.map(x, 0, a, 0, b);
 			}
-			else if (x > c || ((Float)x).equals(c)) {
+			else if (Float.compare(x, c) >= 0) {
 				y = PApplet.map(x, c, 1, d, 1);
 			}
 			else {
@@ -36,10 +36,10 @@ public class TripleLinear extends Function {
 			}
 		}
 		else {
-			if (x < c || ((Float)x).equals(c)) {
+			if (Float.compare(x, c) <= 0) {
 				y = PApplet.map(x, 0, c, 0, d);
 			}
-			else if (x > a || ((Float)x).equals(a)) {
+			else if (Float.compare(x, a) >= 0) {
 				y = PApplet.map(x, a, 1, b, 1);
 			}
 			else {

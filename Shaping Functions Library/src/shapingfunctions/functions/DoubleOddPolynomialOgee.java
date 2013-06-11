@@ -35,7 +35,7 @@ public class DoubleOddPolynomialOgee extends Function {
 		int p = 2*n + 1;
 		
 		float y = 0;
-		if (x < fa || ((Float)x).equals(fa)) {
+		if (Float.compare(x, fa) <= 0) {
 			y = fb - fb*PApplet.pow(1-x/fa, p);
 		}
 		else {

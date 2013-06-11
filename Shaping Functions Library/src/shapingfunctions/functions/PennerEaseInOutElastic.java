@@ -12,8 +12,8 @@ public class PennerEaseInOutElastic extends Function {
 
 	@Override
 	public float applyFunction(float x, boolean clamp) {
-		if (((Float) x).equals(0)) return 0;
-		if (((Float) (x /= 0.5f)).equals(2)) return 1;
+		if (Float.compare(x, 0.0f) == 0) return 0;
+		if (Float.compare(x /= 0.5f, 2.0f) == 0) return 1;
 
 		float p = 0.3f * 1.5f;
 		float s = p / 4.0f;

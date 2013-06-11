@@ -11,8 +11,8 @@ public class PennerEaseInOutExpo extends Function {
 
 	@Override
 	public float applyFunction(float x, boolean clamp) {
-		if (((Float) x).equals(0)) return 0;
-		if (((Float) x).equals(1)) return 1;
+		if (Float.compare(x, 0.0f) == 0) return 0;
+		if (Float.compare(x, 1.0f) == 0) return 1;
 
 		float y = ((x /= 1.0f / 2.0f) < 1) ? (1.0f / 2.0f * PApplet.pow(2, 10 * (x - 1))) 
 				: (1.0f / 2.0f * (-PApplet.pow(2, -10 * --x) + 2));

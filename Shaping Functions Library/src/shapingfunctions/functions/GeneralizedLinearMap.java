@@ -25,10 +25,10 @@ public class GeneralizedLinearMap extends Function {
 	public float applyFunction(float x, boolean clamp) {
 		float y = 0;
 		if (a < c) {
-			if (x < a || ((Float)x).equals(a)) {
+			if (Float.compare(x, a) <= 0) {
 				y = b;
 			}
-			else if (x > c || ((Float)x).equals(c)) {
+			else if (Float.compare(x, c) >= 0) {
 				y = d;
 			}
 			else {
@@ -36,10 +36,10 @@ public class GeneralizedLinearMap extends Function {
 			}
 		}
 		else {
-			if (x < c || ((Float)x).equals(c)) {
+			if (Float.compare(x, c) <= 0) {
 				y = d;
 			}
-			else if (x > a || ((Float)x).equals(a)) {
+			else if (Float.compare(x, a) >= 0) {
 				y = b;
 			}
 			else {

@@ -25,9 +25,7 @@ public class QuadraticBezierStaircase extends Function {
 	@Override
 	public float applyFunction(float x, boolean clamp) {
 		float aa = (a - 0.5f);
-		if (((Float)x).equals(0)) {
-			return clamp(x, clamp);
-		}
+		if (Float.compare(x, 0.0f) == 0) return 0;
 		
 		float x0 = (PApplet.floor(x*n)) / (float)n;
 		float x1 = (PApplet.ceil(x*n)) / (float)n;
@@ -45,8 +43,7 @@ public class QuadraticBezierStaircase extends Function {
 		float y = 0;
 		float denom = (1.0f/(float)n) * 0.5f;
 		
-		if ((x < p0x || ((Float)x).equals(p0x)) &&
-				(x > x0 || ((Float)x).equals(x0))) {
+		if ((Float.compare(x, p0x) <= 0) && (Float.compare(x, x0) >= 0)) {
 			// left side
 			if (PApplet.floor(x*n) <= 0) {
 				y = PApplet.map(x, x0, px, y0, py);
@@ -74,8 +71,7 @@ public class QuadraticBezierStaircase extends Function {
 				y = zy;
 			}
 		}
-		else if ((x > p1x || ((Float)x).equals(p1x)) &&
-				(x < x1 || ((Float)x).equals(x1))) {
+		else if ((Float.compare(x, p1x) >= 0) && (Float.compare(x, x1) <= 0)) {
 			// right side
 			if (PApplet.ceil(x*n) >= n) {
 				y = PApplet.map(x, px, x1, py, y1);
@@ -89,7 +85,7 @@ public class QuadraticBezierStaircase extends Function {
 				float za = (x1 - p1x) / denom;
 				float zb = (y1 - p1y) / denom;
 				float zx = (x - p1x) / denom;
-				if (((Float)za).equals(0.5f)) {
+				if (Float.compare(za, 0.5f) == 0) {
 					za += PConstants.EPSILON;
 				}
 				
@@ -111,7 +107,7 @@ public class QuadraticBezierStaircase extends Function {
 			float za = (px - p0x) / denom;
 			float zb = (py - p0y) / denom;
 			float zx = (x - p0x) / denom;
-			if (((Float)za).equals(0.5f)) {
+			if (Float.compare(za, 0.5f) == 0) {
 				za += PConstants.EPSILON;
 			}
 			

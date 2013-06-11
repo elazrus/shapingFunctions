@@ -4,38 +4,35 @@ import processing.core.PApplet;
 import processing.core.PConstants;
 import shapingfunctions.library.Function;
 
-public class DoubleLinear extends Function {
-	private float a, b;
+public class DoubleExponentialSigmoid extends Function {
+	private float a;
 	
-	public DoubleLinear(PApplet applet) {
+	public DoubleExponentialSigmoid(PApplet applet) {
 		super(applet);
 
-		this.a = this.b = 0;
+		this.a = 0;
 	}
 	
-	public DoubleLinear(PApplet applet, float a, float b) {
+	public DoubleExponentialSigmoid(PApplet applet, float a) {
 		super(applet);
 		
 		this.a = a;
-		this.b = b;
 	}
 
 	@Override
 	public float applyFunction(float x, boolean clamp) {
 		float min_param_a = 0.0f + PConstants.EPSILON;
 		float max_param_a = 1.0f - PConstants.EPSILON;
-		float min_param_b = 0.0f;
-		float max_param_b = 1.0f;
 		
 		float fa = PApplet.constrain(a, min_param_a, max_param_a);
-		float fb = PApplet.constrain(b, min_param_b, max_param_b);
+		fa = 1 - fa;
 		
 		float y = 0;
-		if (Float.compare(x, fa) <= 0) {
-			y = (fb/fa) * x;
+		if (Float.compare(x, 0.5f) <= 0) {
+			y = (PApplet.pow(2.0f*x, 1.0f/fa)) / 2.0f;
 		}
 		else {
-			y = fb + ((1.0f-fb) / (1.0f-fa)) * (x-fa);
+			y = 1.0f - (PApplet.pow(2.0f*(1.0f-x), 1.0f/fa)) / 2.0f;
 		}
 		
 		return clamp(y, clamp);
@@ -47,14 +44,6 @@ public class DoubleLinear extends Function {
 
 	public void setA(float a) {
 		this.a = a;
-	}
-
-	public float getB() {
-		return b;
-	}
-
-	public void setB(float b) {
-		this.b = b;
 	}
 
 }

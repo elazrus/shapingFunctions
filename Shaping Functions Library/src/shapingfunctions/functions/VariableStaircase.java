@@ -24,7 +24,7 @@ public class VariableStaircase extends Function {
 	@Override
 	public float applyFunction(float x, boolean clamp) {
 		float aa = (a - 0.5f);
-		if (((Float)aa).equals(0)) return clamp(x, clamp);
+		if (Float.compare(aa, 0.0f) == 0) return clamp(x, clamp);
 		
 		float x0 = (PApplet.floor(x*n)) / (float)n;
 		float x1 = (PApplet.ceil(x*n)) / (float)n;

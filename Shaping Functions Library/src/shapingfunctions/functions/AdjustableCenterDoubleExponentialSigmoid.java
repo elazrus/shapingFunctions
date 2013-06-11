@@ -4,16 +4,16 @@ import processing.core.PApplet;
 import processing.core.PConstants;
 import shapingfunctions.library.Function;
 
-public class DoubleLinear extends Function {
+public class AdjustableCenterDoubleExponentialSigmoid extends Function {
 	private float a, b;
 	
-	public DoubleLinear(PApplet applet) {
+	public AdjustableCenterDoubleExponentialSigmoid(PApplet applet) {
 		super(applet);
 
 		this.a = this.b = 0;
 	}
 	
-	public DoubleLinear(PApplet applet, float a, float b) {
+	public AdjustableCenterDoubleExponentialSigmoid(PApplet applet, float a, float b) {
 		super(applet);
 		
 		this.a = a;
@@ -24,18 +24,16 @@ public class DoubleLinear extends Function {
 	public float applyFunction(float x, boolean clamp) {
 		float min_param_a = 0.0f + PConstants.EPSILON;
 		float max_param_a = 1.0f - PConstants.EPSILON;
-		float min_param_b = 0.0f;
-		float max_param_b = 1.0f;
-		
 		float fa = PApplet.constrain(a, min_param_a, max_param_a);
-		float fb = PApplet.constrain(b, min_param_b, max_param_b);
+		fa = 1.0f - fa;
 		
 		float y = 0;
-		if (Float.compare(x, fa) <= 0) {
-			y = (fb/fa) * x;
+		float w = PApplet.max(0, PApplet.min(1, x - (b-0.5f)));
+		if (Float.compare(w, 0.5f) <= 0) {
+			y = (PApplet.pow(2.0f*w, 1.0f/fa)) / 2.0f;
 		}
 		else {
-			y = fb + ((1.0f-fb) / (1.0f-fa)) * (x-fa);
+			y = 1.0f - (PApplet.pow(2.0f*(1.0f-w), 1.0f/fa)) / 2.0f;
 		}
 		
 		return clamp(y, clamp);
