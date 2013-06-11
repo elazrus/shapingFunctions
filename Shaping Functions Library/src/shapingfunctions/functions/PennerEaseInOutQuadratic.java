@@ -14,11 +14,6 @@ public class PennerEaseInOutQuadratic extends Function {
 		float y = ((x /= 1.0f / 2f) < 1f) ? (1.0f / 2f * x * x)
 				: (-1.0f / 2f * ((--x) * (x - 2) - 1));
 
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

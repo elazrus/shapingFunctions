@@ -18,11 +18,6 @@ public class PennerEaseOutElastic extends Function {
 		float s = p/4.0f;
 		float y = PApplet.pow(2, -10*x) * PApplet.sin((x-s)*(2/PConstants.PI)/p) + 1.0f;
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

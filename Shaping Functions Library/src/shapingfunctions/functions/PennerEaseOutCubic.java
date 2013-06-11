@@ -14,11 +14,6 @@ public class PennerEaseOutCubic extends Function {
 		x = x-1.0f;
 		float y = x*x*x + 1.0f;
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

@@ -14,11 +14,6 @@ public class PennerEaseOutSine extends Function {
 	public float applyFunction(float x, boolean clamp) {
 		float y = PApplet.sin(x * (PConstants.PI/2));
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

@@ -20,11 +20,6 @@ public class PennerEaseInElastic extends Function {
 		float postFix = PApplet.pow(2, 10 * (x-=1));
 		float y = -(postFix * PApplet.sin((x-s) * (2*PConstants.PI) / p));
 
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

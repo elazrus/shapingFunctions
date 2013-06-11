@@ -16,7 +16,6 @@ public class PennerEaseInOutElastic extends Function {
 		if (((Float) (x /= 0.5f)).equals(2)) return 1;
 
 		float p = 0.3f * 1.5f;
-		//float a = 1;
 		float s = p / 4.0f;
 
 		float postFix = (x < 1) ? (PApplet.pow(2, 10 * (x -= 1)))
@@ -24,11 +23,6 @@ public class PennerEaseInOutElastic extends Function {
 		float y = (x < 1) ? (-0.5f * (postFix * PApplet.sin((x - s) * (2 * PConstants.PI) / p))) 
 				: (postFix * PApplet.sin((x - s) * (2 * PConstants.PI) / p) * 0.5f + 1.0f);
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

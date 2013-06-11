@@ -33,12 +33,7 @@ public class Gompertz extends Function {
 		float minVal = PApplet.exp(b);
 		y = PApplet.map(y, minVal, maxVal, 0, 1);
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 
 	public float getA() {

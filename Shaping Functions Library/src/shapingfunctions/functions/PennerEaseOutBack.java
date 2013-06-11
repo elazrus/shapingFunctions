@@ -15,11 +15,6 @@ public class PennerEaseOutBack extends Function {
 		x = (float) (x-1.0);
 		float y = (float) (x*x*((s+1.0)*x + s) + 1.0);
 		
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }

@@ -23,11 +23,6 @@ public class PennerEaseInOutBack extends Function {
 			y = 1.0f/2.0f * (x*x*((s+1.0f)*x + s) + 2.0f);
 		}
 
-		if (clamp) {
-			if (y < 0) return 0;
-			if (y > 1) return 1;
-		}
-		
-		return y;
+		return clamp(y, clamp);
 	}
 }
