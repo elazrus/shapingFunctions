@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class AdjustableCenterCosineWindow extends Function {
 	private float a;
 	
-	public AdjustableCenterCosineWindow(PApplet applet) {
-		super(applet);
+	public AdjustableCenterCosineWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public AdjustableCenterCosineWindow(PApplet applet, float a) {
-		super(applet);
+	public AdjustableCenterCosineWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

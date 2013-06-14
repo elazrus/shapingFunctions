@@ -11,14 +11,14 @@ public class CircularArcThroughAPoint extends Function {
 	private float m_Centery;
 	private float m_dRadius;
 
-	public CircularArcThroughAPoint(PApplet applet) {
-		super(applet);
+	public CircularArcThroughAPoint() {
+		super();
 
 		this.a = this.b = 0;
 	}
 
-	public CircularArcThroughAPoint(PApplet applet, float a, float b) {
-		super(applet);
+	public CircularArcThroughAPoint(float a, float b) {
+		super();
 
 		this.a = a;
 		this.b = b;

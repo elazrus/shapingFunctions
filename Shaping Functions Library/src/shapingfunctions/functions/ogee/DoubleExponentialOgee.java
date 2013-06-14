@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class DoubleExponentialOgee extends Function {
 	private float a;
 	
-	public DoubleExponentialOgee(PApplet applet) {
-		super(applet);
+	public DoubleExponentialOgee() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public DoubleExponentialOgee(PApplet applet, float a) {
-		super(applet);
+	public DoubleExponentialOgee(float a) {
+		super();
 		
 		this.a = a;
 	}

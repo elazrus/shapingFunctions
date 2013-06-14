@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class ExponentialEmphasis extends Function {
 	private float a;
 	
-	public ExponentialEmphasis(PApplet applet) {
-		super(applet);
+	public ExponentialEmphasis() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public ExponentialEmphasis(PApplet applet, float a) {
-		super(applet);
+	public ExponentialEmphasis(float a) {
+		super();
 		
 		this.a = a;
 	}

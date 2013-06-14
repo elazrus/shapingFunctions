@@ -1,13 +1,12 @@
 package shapingfunctions.functions.cosine;
 
-import processing.core.PApplet;
 import processing.core.PConstants;
 import shapingfunctions.library.Function;
 
 public class MaclaurinCos extends Function {
 
-	public MaclaurinCos(PApplet applet) {
-		super(applet);
+	public MaclaurinCos() {
+		super();
 	}
 
 	@Override

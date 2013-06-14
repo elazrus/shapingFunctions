@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class AdjustableCenterDoubleExponentialSigmoid extends Function {
 	private float a, b;
 	
-	public AdjustableCenterDoubleExponentialSigmoid(PApplet applet) {
-		super(applet);
+	public AdjustableCenterDoubleExponentialSigmoid() {
+		super();
 
 		this.a = this.b = 0;
 	}
 	
-	public AdjustableCenterDoubleExponentialSigmoid(PApplet applet, float a, float b) {
-		super(applet);
+	public AdjustableCenterDoubleExponentialSigmoid(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

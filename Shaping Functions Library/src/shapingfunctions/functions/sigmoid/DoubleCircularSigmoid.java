@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class DoubleCircularSigmoid extends Function {
 	private float a;
 	
-	public DoubleCircularSigmoid(PApplet applet) {
-		super(applet);
+	public DoubleCircularSigmoid() {
+		super();
 
 		this.a = 0;
 	}
 	
-	public DoubleCircularSigmoid(PApplet applet, float a) {
-		super(applet);
+	public DoubleCircularSigmoid(float a) {
+		super();
 		
 		this.a = a;
 	}

@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class AdjustableCenterEllipticWindow extends Function {
 	private float a;
 	
-	public AdjustableCenterEllipticWindow(PApplet applet) {
-		super(applet);
+	public AdjustableCenterEllipticWindow() {
+		super();
 
 		this.a = 0;
 	}
 	
-	public AdjustableCenterEllipticWindow(PApplet applet, float a) {
-		super(applet);
+	public AdjustableCenterEllipticWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

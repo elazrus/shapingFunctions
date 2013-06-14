@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class DampedSinusoidReverse extends Function {
 	private float a;
 	
-	public DampedSinusoidReverse(PApplet applet) {
-		super(applet);
+	public DampedSinusoidReverse() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public DampedSinusoidReverse(PApplet applet, float a) {
-		super(applet);
+	public DampedSinusoidReverse(float a) {
+		super();
 		
 		this.a = a;
 	}

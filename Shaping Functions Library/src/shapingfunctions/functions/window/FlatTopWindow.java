@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class FlatTopWindow extends Function {
 
-	public FlatTopWindow(PApplet applet) {
-		super(applet);
+	public FlatTopWindow() {
+		super();
 	}
 
 	@Override

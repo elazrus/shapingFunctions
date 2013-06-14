@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class CatmullRomInterpolate extends Function {
 	private float a, b;
 	
-	public CatmullRomInterpolate(PApplet applet) {
-		super(applet);
+	public CatmullRomInterpolate() {
+		super();
 			
 		this.a = this.b = 0;
 	}
 	
-	public CatmullRomInterpolate(PApplet applet, float a, float b) {
-		super(applet);
+	public CatmullRomInterpolate(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

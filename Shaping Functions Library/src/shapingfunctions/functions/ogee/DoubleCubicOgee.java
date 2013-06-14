@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class DoubleCubicOgee extends Function {
 	private float a, b;
 	
-	public DoubleCubicOgee(PApplet applet) {
-		super(applet);
+	public DoubleCubicOgee() {
+		super();
 
 		this.a = this.b = 0;
 	}
 	
-	public DoubleCubicOgee(PApplet applet, float a, float b) {
-		super(applet);
+	public DoubleCubicOgee(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class DoubleLinear extends Function {
 	private float a, b;
 	
-	public DoubleLinear(PApplet applet) {
-		super(applet);
+	public DoubleLinear() {
+		super();
 
 		this.a = this.b = 0;
 	}
 	
-	public DoubleLinear(PApplet applet, float a, float b) {
-		super(applet);
+	public DoubleLinear(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

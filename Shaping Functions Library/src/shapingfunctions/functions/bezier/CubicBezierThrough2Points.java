@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class CubicBezierThrough2Points extends Function {
 	private float a, b, c, d;
 	
-	public CubicBezierThrough2Points(PApplet applet) {
-		super(applet);
+	public CubicBezierThrough2Points() {
+		super();
 			
 		this.a = this.b = this.c = this.d;
 	}
 	
-	public CubicBezierThrough2Points(PApplet applet, float a, float b, float c, float d) {
-		super(applet);
+	public CubicBezierThrough2Points(float a, float b, float c, float d) {
+		super();
 		
 		this.a = a;
 		this.b = b;
@@ -92,7 +92,7 @@ public class CubicBezierThrough2Points extends Function {
 		x1 = PApplet.constrain(x1, 0+PConstants.EPSILON, 1-PConstants.EPSILON);
 		x2 = PApplet.constrain(x2, 0+PConstants.EPSILON, 1-PConstants.EPSILON);
 		
-		CubicBezier cubicBezier = new CubicBezier(applet, x1, y1, x2, y2);
+		CubicBezier cubicBezier = new CubicBezier(x1, y1, x2, y2);
 		y = cubicBezier.applyFunction(x);
 		y = PApplet.constrain(y, 0, 1);
 		

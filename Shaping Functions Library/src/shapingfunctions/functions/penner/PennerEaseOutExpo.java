@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class PennerEaseOutExpo extends Function {
 
-	public PennerEaseOutExpo(PApplet applet) {
-		super(applet);
+	public PennerEaseOutExpo() {
+		super();
 	}
 
 	public float applyFunction(float x, boolean clamp) {

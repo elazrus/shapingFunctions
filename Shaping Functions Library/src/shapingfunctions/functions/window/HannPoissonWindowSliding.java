@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class HannPoissonWindowSliding extends Function {
 	private float a, b;
 	
-	public HannPoissonWindowSliding(PApplet applet) {
-		super(applet);
+	public HannPoissonWindowSliding() {
+		super();
 			
 		this.a = this.b = 0;
 	}
 	
-	public HannPoissonWindowSliding(PApplet applet, float a, float b) {
-		super(applet);
+	public HannPoissonWindowSliding(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

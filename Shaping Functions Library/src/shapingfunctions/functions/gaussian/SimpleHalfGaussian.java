@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class SimpleHalfGaussian extends Function {
 
-	public SimpleHalfGaussian(PApplet applet) {
-		super(applet);
+	public SimpleHalfGaussian() {
+		super();
 	}
 
 	@Override

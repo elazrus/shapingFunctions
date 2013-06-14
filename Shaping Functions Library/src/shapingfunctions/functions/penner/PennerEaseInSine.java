@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class PennerEaseInSine extends Function {
 	
-	public PennerEaseInSine(PApplet applet) {
-		super(applet);
+	public PennerEaseInSine() {
+		super();
 	}
 
 	@Override

@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class DoubleExponentialSigmoid extends Function {
 	private float a;
 	
-	public DoubleExponentialSigmoid(PApplet applet) {
-		super(applet);
+	public DoubleExponentialSigmoid() {
+		super();
 
 		this.a = 0;
 	}
 	
-	public DoubleExponentialSigmoid(PApplet applet, float a) {
-		super(applet);
+	public DoubleExponentialSigmoid(float a) {
+		super();
 		
 		this.a = a;
 	}

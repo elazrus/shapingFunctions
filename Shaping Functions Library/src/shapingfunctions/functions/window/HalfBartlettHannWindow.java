@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HalfBartlettHannWindow extends Function {
 
-	public HalfBartlettHannWindow(PApplet applet) {
-		super(applet);
+	public HalfBartlettHannWindow() {
+		super();
 	}
 
 	@Override

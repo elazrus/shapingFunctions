@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class BartlettWindow extends Function {
 
-	public BartlettWindow(PApplet applet) {
-		super(applet);
+	public BartlettWindow() {
+		super();
 	}
 
 	@Override

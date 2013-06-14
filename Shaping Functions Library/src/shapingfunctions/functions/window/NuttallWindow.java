@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class NuttallWindow extends Function {
 
-	public NuttallWindow(PApplet applet) {
-		super(applet);
+	public NuttallWindow() {
+		super();
 	}
 
 	@Override

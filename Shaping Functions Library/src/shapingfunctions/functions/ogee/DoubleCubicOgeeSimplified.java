@@ -1,19 +1,18 @@
 package shapingfunctions.functions.ogee;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class DoubleCubicOgeeSimplified extends Function {
 	private float a, b;
 	
-	public DoubleCubicOgeeSimplified(PApplet applet) {
-		super(applet);
+	public DoubleCubicOgeeSimplified() {
+		super();
 
 		this.a = this.b = 0;
 	}
 	
-	public DoubleCubicOgeeSimplified(PApplet applet, float a, float b) {
-		super(applet);
+	public DoubleCubicOgeeSimplified(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

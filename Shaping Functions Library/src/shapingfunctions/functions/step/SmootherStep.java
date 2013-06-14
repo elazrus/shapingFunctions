@@ -1,12 +1,11 @@
 package shapingfunctions.functions.step;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class SmootherStep extends Function {
 
-	public SmootherStep(PApplet applet) {
-		super(applet);
+	public SmootherStep() {
+		super();
 	}
 
 	@Override

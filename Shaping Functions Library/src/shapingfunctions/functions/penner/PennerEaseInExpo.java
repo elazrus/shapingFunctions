@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class PennerEaseInExpo extends Function {
 
-	public PennerEaseInExpo(PApplet applet) {
-		super(applet);
+	public PennerEaseInExpo() {
+		super();
 	}
 
 	@Override

@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class Staircase extends Function {
 	private int n;
 	
-	public Staircase(PApplet applet) {
-		super(applet);
+	public Staircase() {
+		super();
 		
 		this.n = 0;
 	}
 	
-	public Staircase(PApplet applet, int n) {
-		super(applet);
+	public Staircase(int n) {
+		super();
 		
 		this.n = n;
 	}

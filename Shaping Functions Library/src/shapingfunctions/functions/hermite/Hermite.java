@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class Hermite extends Function {
 	private float a, b, c, d;
 	
-	public Hermite(PApplet applet) {
-		super(applet);
+	public Hermite() {
+		super();
 			
 		this.a = this.b = this.c = this.d = 0;
 	}
 	
-	public Hermite(PApplet applet, float a, float b, float c, float d) {
-		super(applet);
+	public Hermite(float a, float b, float c, float d) {
+		super();
 		
 		this.a = a;
 		this.b = b;

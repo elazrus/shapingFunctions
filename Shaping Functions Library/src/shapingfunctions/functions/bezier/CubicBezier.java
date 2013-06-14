@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class CubicBezier extends Function {
 	private float a, b, c, d;
 	
-	public CubicBezier(PApplet applet) {
-		super(applet);
+	public CubicBezier() {
+		super();
 			
 		this.a = this.b = this.c = this.d = 0;
 	}
 	
-	public CubicBezier(PApplet applet, float a, float b, float c, float d) {
-		super(applet);
+	public CubicBezier(float a, float b, float c, float d) {
+		super();
 		
 		this.a = a;
 		this.b = b;

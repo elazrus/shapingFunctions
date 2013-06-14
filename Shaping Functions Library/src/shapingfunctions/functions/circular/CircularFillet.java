@@ -14,14 +14,14 @@ public class CircularFillet extends Function {
 	private float arcCenterX, arcCenterY;
 	private float arcRadius;
 
-	public CircularFillet(PApplet applet) {
-		super(applet);
+	public CircularFillet() {
+		super();
 
 		this.a = this.b = this.c = 0;
 	}
 
-	public CircularFillet(PApplet applet, float a, float b, float c) {
-		super(applet);
+	public CircularFillet(float a, float b, float c) {
+		super();
 
 		this.a = a;
 		this.b = b;

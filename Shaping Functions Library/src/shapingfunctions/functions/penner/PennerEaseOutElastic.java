@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class PennerEaseOutElastic extends Function {
 
-	public PennerEaseOutElastic(PApplet applet) {
-		super(applet);
+	public PennerEaseOutElastic() {
+		super();
 	}
 
 	public float applyFunction(float x, boolean clamp) {

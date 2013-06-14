@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class ParabolaThroughAPoint extends Function {
 	private float a, b;
 	
-	public ParabolaThroughAPoint(PApplet applet) {
-		super(applet);
+	public ParabolaThroughAPoint() {
+		super();
 			
 		this.a = this.b = 0;
 	}
 	
-	public ParabolaThroughAPoint(PApplet applet, float a, float b) {
-		super(applet);
+	public ParabolaThroughAPoint(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

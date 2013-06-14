@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class PennerEaseInOutElastic extends Function {
 
-	public PennerEaseInOutElastic(PApplet applet) {
-		super(applet);
+	public PennerEaseInOutElastic() {
+		super();
 	}
 
 	@Override

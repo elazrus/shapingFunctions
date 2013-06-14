@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class AdjustableSigmaGaussian extends Function {
 	private float a;
 	
-	public AdjustableSigmaGaussian(PApplet applet) {
-		super(applet);
+	public AdjustableSigmaGaussian() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public AdjustableSigmaGaussian(PApplet applet, float a) {
-		super(applet);
+	public AdjustableSigmaGaussian(float a) {
+		super();
 		
 		this.a = a;
 	}

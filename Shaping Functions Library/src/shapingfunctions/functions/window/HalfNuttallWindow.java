@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HalfNuttallWindow extends Function {
 
-	public HalfNuttallWindow(PApplet applet) {
-		super(applet);
+	public HalfNuttallWindow() {
+		super();
 	}
 
 	@Override

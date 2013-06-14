@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class DampedSinusoid extends Function {
 	private float a;
 	
-	public DampedSinusoid(PApplet applet) {
-		super(applet);
+	public DampedSinusoid() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public DampedSinusoid(PApplet applet, float a) {
-		super(applet);
+	public DampedSinusoid(float a) {
+		super();
 		
 		this.a = a;
 	}

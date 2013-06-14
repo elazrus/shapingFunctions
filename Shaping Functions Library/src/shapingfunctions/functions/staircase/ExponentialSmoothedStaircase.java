@@ -7,15 +7,15 @@ public class ExponentialSmoothedStaircase extends Function {
 	private float a;
 	private int n;
 	
-	public ExponentialSmoothedStaircase(PApplet applet) {
-		super(applet);
+	public ExponentialSmoothedStaircase() {
+		super();
 		
 		this.a = 0;
 		this.n = 0;
 	}
 	
-	public ExponentialSmoothedStaircase(PApplet applet, float a, int n)  {
-		super(applet);
+	public ExponentialSmoothedStaircase(float a, int n)  {
+		super();
 		
 		this.a = a;
 		this.n = n;

@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class QuadraticBezier extends Function {
 	private float a, b;
 	
-	public QuadraticBezier(PApplet applet) {
-		super(applet);
+	public QuadraticBezier() {
+		super();
 			
 		this.a = this.b = 0;
 	}
 	
-	public QuadraticBezier(PApplet applet, float a, float b) {
-		super(applet);
+	public QuadraticBezier(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

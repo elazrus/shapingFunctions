@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class CosineWindow extends Function {
 
-	public CosineWindow(PApplet applet) {
-		super(applet);
+	public CosineWindow() {
+		super();
 	}
 
 	@Override

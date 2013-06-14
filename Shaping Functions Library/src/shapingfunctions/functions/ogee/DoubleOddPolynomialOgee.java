@@ -8,15 +8,15 @@ public class DoubleOddPolynomialOgee extends Function {
 	private float a, b;
 	private int n;
 	
-	public DoubleOddPolynomialOgee(PApplet applet) {
-		super(applet);
+	public DoubleOddPolynomialOgee() {
+		super();
 
 		this.a = this.b = 0;
 		this.n = 0;
 	}
 
-	public DoubleOddPolynomialOgee(PApplet applet, float a, float b, int n) {
-		super(applet);
+	public DoubleOddPolynomialOgee(float a, float b, int n) {
+		super();
 		
 		this.a = a;
 		this.b = b;

@@ -1,12 +1,11 @@
 package shapingfunctions.functions.penner;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class PennerEaseOutCubic extends Function {
 
-	public PennerEaseOutCubic(PApplet applet) {
-		super(applet);
+	public PennerEaseOutCubic() {
+		super();
 	}
 
 	@Override

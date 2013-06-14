@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class CircularEaseIn extends Function {
 
-	public CircularEaseIn(PApplet applet) {
-		super(applet);
+	public CircularEaseIn() {
+		super();
 	}
 
 	@Override

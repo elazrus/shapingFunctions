@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class TukeyWindow extends Function {
 	private float a;
 	
-	public TukeyWindow(PApplet applet) {
-		super(applet);
+	public TukeyWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public TukeyWindow(PApplet applet, float a) {
-		super(applet);
+	public TukeyWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

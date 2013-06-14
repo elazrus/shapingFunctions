@@ -1,12 +1,11 @@
 package shapingfunctions.functions.squareroot;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class IterativeSquareRoot extends Function {
 
-	public IterativeSquareRoot(PApplet applet) {
-		super(applet);
+	public IterativeSquareRoot() {
+		super();
 	}
 
 	@Override

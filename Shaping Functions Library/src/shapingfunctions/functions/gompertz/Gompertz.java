@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class Gompertz extends Function {
 	private float a;
 	
-	public Gompertz(PApplet applet) {
-		super(applet);
+	public Gompertz() {
+		super();
 		
 		this.a = 0;
 	}
 	
-	public Gompertz(PApplet applet, float a) {
-		super(applet);
+	public Gompertz(float a) {
+		super();
 		
 		this.a = a;
 	}

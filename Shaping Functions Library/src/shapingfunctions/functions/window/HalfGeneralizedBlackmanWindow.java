@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class HalfGeneralizedBlackmanWindow extends Function {
 	private float a;
 	
-	public HalfGeneralizedBlackmanWindow(PApplet applet) {
-		super(applet);
+	public HalfGeneralizedBlackmanWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public HalfGeneralizedBlackmanWindow(PApplet applet, float a) {
-		super(applet);
+	public HalfGeneralizedBlackmanWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

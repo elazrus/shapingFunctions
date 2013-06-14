@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HalfLanczosSincWindow extends Function {
 
-	public HalfLanczosSincWindow(PApplet applet) {
-		super(applet);
+	public HalfLanczosSincWindow() {
+		super();
 	}
 
 	private float sinc(float x) {

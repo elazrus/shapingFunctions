@@ -1,12 +1,11 @@
 package shapingfunctions.functions.penner;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class PennerEaseInOutQuadratic extends Function {
 
-	public PennerEaseInOutQuadratic(PApplet applet) {
-		super(applet);
+	public PennerEaseInOutQuadratic() {
+		super();
 	}
 
 	@Override

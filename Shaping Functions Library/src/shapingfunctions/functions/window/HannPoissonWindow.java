@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class HannPoissonWindow extends Function {
 	private float a;
 	
-	public HannPoissonWindow(PApplet applet) {
-		super(applet);
+	public HannPoissonWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public HannPoissonWindow(PApplet applet, float a) {
-		super(applet);
+	public HannPoissonWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

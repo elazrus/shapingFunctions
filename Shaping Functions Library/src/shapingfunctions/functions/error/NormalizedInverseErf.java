@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class NormalizedInverseErf extends Function {
 
-	public NormalizedInverseErf(PApplet applet) {
-		super(applet);
+	public NormalizedInverseErf() {
+		super();
 	}
 
 	@Override

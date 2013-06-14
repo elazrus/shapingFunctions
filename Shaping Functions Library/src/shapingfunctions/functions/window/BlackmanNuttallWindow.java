@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class BlackmanNuttallWindow extends Function {
 
-	public BlackmanNuttallWindow(PApplet applet) {
-		super(applet);
+	public BlackmanNuttallWindow() {
+		super();
 	}
 
 	@Override

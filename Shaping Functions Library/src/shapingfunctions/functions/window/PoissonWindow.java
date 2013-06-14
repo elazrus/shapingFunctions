@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class PoissonWindow extends Function {
 	private float a;
 	
-	public PoissonWindow(PApplet applet) {
-		super(applet);
+	public PoissonWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public PoissonWindow(PApplet applet, float a) {
-		super(applet);
+	public PoissonWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

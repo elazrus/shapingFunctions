@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class HalfGaussianThroughAPoint extends Function {
 	private float a, b;
 	
-	public HalfGaussianThroughAPoint(PApplet applet) {
-		super(applet);
+	public HalfGaussianThroughAPoint() {
+		super();
 			
 		this.a = this.b = 0;
 	}
 	
-	public HalfGaussianThroughAPoint(PApplet applet, float a, float b) {
-		super(applet);
+	public HalfGaussianThroughAPoint(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

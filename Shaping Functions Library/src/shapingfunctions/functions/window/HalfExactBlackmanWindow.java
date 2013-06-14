@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HalfExactBlackmanWindow extends Function {
 
-	public HalfExactBlackmanWindow(PApplet applet) {
-		super(applet);
+	public HalfExactBlackmanWindow() {
+		super();
 	}
 
 	@Override

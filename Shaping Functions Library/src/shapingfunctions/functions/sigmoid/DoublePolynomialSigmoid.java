@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class DoublePolynomialSigmoid extends Function {
 	private int n;
 	
-	public DoublePolynomialSigmoid(PApplet applet) {
-		super(applet);
+	public DoublePolynomialSigmoid() {
+		super();
 
 		this.n = 0;
 	}
 	
-	public DoublePolynomialSigmoid(PApplet applet, int n) {
-		super(applet);
+	public DoublePolynomialSigmoid(int n) {
+		super();
 		
 		this.n = n;
 	}

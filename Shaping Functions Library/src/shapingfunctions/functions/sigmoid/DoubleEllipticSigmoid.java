@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class DoubleEllipticSigmoid extends Function {
 	private float a, b;
 	
-	public DoubleEllipticSigmoid(PApplet applet) {
-		super(applet);
+	public DoubleEllipticSigmoid() {
+		super();
 
 		this.a = this.b = 0;
 	}
 	
-	public DoubleEllipticSigmoid(PApplet applet, float a, float b) {
-		super(applet);
+	public DoubleEllipticSigmoid(float a, float b) {
+		super();
 		
 		this.a = a;
 		this.b = b;

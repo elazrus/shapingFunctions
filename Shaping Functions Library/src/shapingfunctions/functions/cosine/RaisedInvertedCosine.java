@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class RaisedInvertedCosine extends Function {
 
-	public RaisedInvertedCosine(PApplet applet) {
-		super(applet);
+	public RaisedInvertedCosine() {
+		super();
 	}
 
 	@Override

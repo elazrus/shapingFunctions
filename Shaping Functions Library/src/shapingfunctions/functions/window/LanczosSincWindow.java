@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class LanczosSincWindow extends Function {
 
-	public LanczosSincWindow(PApplet applet) {
-		super(applet);
+	public LanczosSincWindow() {
+		super();
 	}
 
 	private float sinc(float x) {

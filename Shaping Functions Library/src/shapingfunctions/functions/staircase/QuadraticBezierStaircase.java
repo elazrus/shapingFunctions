@@ -8,15 +8,15 @@ public class QuadraticBezierStaircase extends Function {
 	private float a;
 	private int n;
 	
-	public QuadraticBezierStaircase(PApplet applet) {
-		super(applet);
+	public QuadraticBezierStaircase() {
+		super();
 
 		this.a = 0;
 		this.n = 0;
 	}
 	
-	public QuadraticBezierStaircase(PApplet applet, float a, int n) {
-		super(applet);
+	public QuadraticBezierStaircase(float a, int n) {
+		super();
 		
 		this.a = a;
 		this.n = n;

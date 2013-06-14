@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class TripleLinear extends Function {
 	private float a, b, c, d;
 	
-	public TripleLinear(PApplet applet) {
-		super(applet);
+	public TripleLinear() {
+		super();
 
 		this.a = this.b = this.c = this.d = 0;
 	}
 	
-	public TripleLinear(PApplet applet, float a, float b, float c, float d) {
-		super(applet);
+	public TripleLinear(float a, float b, float c, float d) {
+		super();
 		
 		this.a = a;
 		this.b = b;

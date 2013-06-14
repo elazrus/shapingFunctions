@@ -1,12 +1,11 @@
 package shapingfunctions.functions.squareroot;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class FastSquareRoot extends Function {
 
-	public FastSquareRoot(PApplet applet) {
-		super(applet);
+	public FastSquareRoot() {
+		super();
 	}
 
 	@Override

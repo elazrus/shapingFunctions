@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HannWindow extends Function {
 
-	public HannWindow(PApplet applet) {
-		super(applet);
+	public HannWindow() {
+		super();
 	}
 
 	@Override

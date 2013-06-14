@@ -7,14 +7,14 @@ import shapingfunctions.library.Function;
 public class GeneralizedTriangleWindow extends Function {
 	private float a;
 	
-	public GeneralizedTriangleWindow(PApplet applet) {
-		super(applet);
+	public GeneralizedTriangleWindow() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public GeneralizedTriangleWindow(PApplet applet, float a) {
-		super(applet);
+	public GeneralizedTriangleWindow(float a) {
+		super();
 		
 		this.a = a;
 	}

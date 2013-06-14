@@ -1,12 +1,11 @@
 package shapingfunctions.functions.cosine;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class BlinnWyvillCosineApproximation extends Function {
 
-	public BlinnWyvillCosineApproximation(PApplet applet) {
-		super(applet);
+	public BlinnWyvillCosineApproximation() {
+		super();
 	}
 
 	@Override

@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HammingWindow extends Function {
 
-	public HammingWindow(PApplet applet) {
-		super(applet);
+	public HammingWindow() {
+		super();
 	}
 
 	@Override

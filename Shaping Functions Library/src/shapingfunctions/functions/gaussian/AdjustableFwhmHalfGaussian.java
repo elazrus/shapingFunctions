@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class AdjustableFwhmHalfGaussian extends Function {
 	private float a;
 	
-	public AdjustableFwhmHalfGaussian(PApplet applet) {
-		super(applet);
+	public AdjustableFwhmHalfGaussian() {
+		super();
 			
 		this.a = 0;
 	}
 	
-	public AdjustableFwhmHalfGaussian(PApplet applet, float a) {
-		super(applet);
+	public AdjustableFwhmHalfGaussian(float a) {
+		super();
 		
 		this.a = a;
 	}

@@ -1,12 +1,11 @@
 package shapingfunctions.functions.penner;
 
-import processing.core.PApplet;
 import shapingfunctions.library.Function;
 
 public class PennerEaseInOutBounce extends Function {
 
-	public PennerEaseInOutBounce(PApplet applet) {
-		super(applet);
+	public PennerEaseInOutBounce() {
+		super();
 	}
 	
 	@Override
@@ -14,11 +13,11 @@ public class PennerEaseInOutBounce extends Function {
 		float y;
 		
 		if (x < 0.5f) {
-			PennerEaseInBounce pennerEaseInBounce = new PennerEaseInBounce(applet);
+			PennerEaseInBounce pennerEaseInBounce = new PennerEaseInBounce();
 			y = pennerEaseInBounce.applyFunction(x*2) * 0.5f;
 		}
 		else {
-			PennerEaseOutBounce pennerEaseOutBounce = new PennerEaseOutBounce(applet);
+			PennerEaseOutBounce pennerEaseOutBounce = new PennerEaseOutBounce();
 			y = pennerEaseOutBounce.applyFunction(x*2-1) * 0.5f + 0.5f;
 		}
 		

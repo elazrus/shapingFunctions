@@ -7,15 +7,15 @@ public class VariableStaircase extends Function {
 	private float a;
 	private int n;
 	
-	public VariableStaircase(PApplet applet) {
-		super(applet);
+	public VariableStaircase() {
+		super();
 
 		this.a = 0;
 		this.n = 0;
 	}
 	
-	public VariableStaircase(PApplet applet, float a, int n) {
-		super(applet);
+	public VariableStaircase(float a, int n) {
+		super();
 		
 		this.a = a;
 		this.n = n;

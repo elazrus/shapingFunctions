@@ -5,8 +5,8 @@ import shapingfunctions.library.Function;
 
 public class DoubleQuadraticSigmoid extends Function {
 
-	public DoubleQuadraticSigmoid(PApplet applet) {
-		super(applet);
+	public DoubleQuadraticSigmoid() {
+		super();
 	}
 
 	@Override

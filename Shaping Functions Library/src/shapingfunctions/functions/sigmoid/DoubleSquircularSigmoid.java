@@ -7,15 +7,15 @@ public class DoubleSquircularSigmoid extends Function {
 	private float a;
 	private int n;
 	
-	public DoubleSquircularSigmoid(PApplet applet) {
-		super(applet);
+	public DoubleSquircularSigmoid() {
+		super();
 
 		this.a = 0;
 		this.n = 0;
 	}
 	
-	public DoubleSquircularSigmoid(PApplet applet, float a, int n) {
-		super(applet);
+	public DoubleSquircularSigmoid(float a, int n) {
+		super();
 		
 		this.a = a;
 		this.n = n;

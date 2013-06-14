@@ -6,8 +6,8 @@ import shapingfunctions.library.Function;
 
 public class HalfBlackmanHarrisWindow extends Function {
 
-	public HalfBlackmanHarrisWindow(PApplet applet) {
-		super(applet);
+	public HalfBlackmanHarrisWindow() {
+		super();
 	}
 
 	@Override

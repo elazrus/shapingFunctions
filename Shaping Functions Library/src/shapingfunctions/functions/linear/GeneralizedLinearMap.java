@@ -6,14 +6,14 @@ import shapingfunctions.library.Function;
 public class GeneralizedLinearMap extends Function {
 	private float a, b, c, d;
 	
-	public GeneralizedLinearMap(PApplet applet) {
-		super(applet);
+	public GeneralizedLinearMap() {
+		super();
 		
 		this.a = this.b = this.c = this.d = 0;
 	}
 	
-	public GeneralizedLinearMap(PApplet applet, float a, float b, float c, float d) {
-		super(applet);
+	public GeneralizedLinearMap(float a, float b, float c, float d) {
+		super();
 		
 		this.a = a;
 		this.b = b;
