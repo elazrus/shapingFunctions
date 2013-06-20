@@ -48,25 +48,30 @@ public class ShapingFunctionsContainer {
 	// myParent is a reference to the parent sketch
 	PApplet myParent;
 
-	public BezierFunctionContainer bezierFunctions;
-	public CircularFunctionContainer circularFunctions;
-	public CosineFunctionContainer cosineFunctions;
-	public ErrorFunctionContainer errorFunctions;
-	public ExponentFunctionContainer exponentFunctions;
-	public GaussianFunctionContainer gaussianFunctions;
-	public GompertzFunctionContainer gompertzFunctions;
-	public HermiteFunctionContainer hermiteFunctions;
-	public InterpolationFunctionContainer interpolationFunctions;
-	public LinearFunctionContainer linearFunctions;
-	public OgeeFunctionContainer ogeeFunctions;
-	public ParabolaFunctionContainer parabolaFunctions;
-	public PennerFunctionContainer pennerFunctions;
-	public SigmoidFunctionContainer sigmoidFunctions;
-	public SinusoidFunctionContainer sinusoidFunctions;
-	public SquareRootFunctionContainer squareRootFunctions;
-	public StaircaseFunctionContainer staircaseFunctions;
-	public StepFunctionContainer stepFunctions;
-	public WindowFunctionContainer windowFunctions;
+	public final BezierFunctionContainer bezierFunctions = new BezierFunctionContainer();
+	public final CircularFunctionContainer circularFunctions = new CircularFunctionContainer();
+	public final CosineFunctionContainer cosineFunctions = new CosineFunctionContainer();
+	public final ErrorFunctionContainer errorFunctions = new ErrorFunctionContainer();
+	public final ExponentFunctionContainer exponentFunctions = new ExponentFunctionContainer();
+	public final GaussianFunctionContainer gaussianFunctions = new GaussianFunctionContainer();
+	public final GompertzFunctionContainer gompertzFunctions = new GompertzFunctionContainer();
+	public final HermiteFunctionContainer hermiteFunctions = new HermiteFunctionContainer();
+	public final InterpolationFunctionContainer interpolationFunctions = new InterpolationFunctionContainer();
+	public final LinearFunctionContainer linearFunctions = new LinearFunctionContainer();
+	public final OgeeFunctionContainer ogeeFunctions = new OgeeFunctionContainer();
+	public final ParabolaFunctionContainer parabolaFunctions = new ParabolaFunctionContainer();
+	public final PennerFunctionContainer pennerFunctions = new PennerFunctionContainer();
+	public final SigmoidFunctionContainer sigmoidFunctions = new SigmoidFunctionContainer();
+	public final SinusoidFunctionContainer sinusoidFunctions = new SinusoidFunctionContainer();
+	public final SquareRootFunctionContainer squareRootFunctions = new SquareRootFunctionContainer();
+	public final StaircaseFunctionContainer staircaseFunctions = new StaircaseFunctionContainer();
+	public final StepFunctionContainer stepFunctions = new StepFunctionContainer();
+	public final WindowFunctionContainer windowFunctions = new WindowFunctionContainer();
+	
+	public final FunctionContainer[] allContainers = {bezierFunctions, circularFunctions, cosineFunctions, errorFunctions,
+			exponentFunctions, gaussianFunctions, gompertzFunctions, hermiteFunctions, interpolationFunctions, linearFunctions,
+			ogeeFunctions, parabolaFunctions, pennerFunctions, sigmoidFunctions, sinusoidFunctions, squareRootFunctions,
+			staircaseFunctions, stepFunctions, windowFunctions}; 
 	
 	public final static String VERSION = "##library.prettyVersion##";
 	
@@ -80,26 +85,6 @@ public class ShapingFunctionsContainer {
 	 */
 	public ShapingFunctionsContainer(PApplet theParent) {
 		myParent = theParent;
-		
-		bezierFunctions = new BezierFunctionContainer();
-		circularFunctions = new CircularFunctionContainer();
-		cosineFunctions = new CosineFunctionContainer();
-		errorFunctions = new ErrorFunctionContainer();
-		exponentFunctions = new ExponentFunctionContainer();
-		gaussianFunctions = new GaussianFunctionContainer();
-		gompertzFunctions = new GompertzFunctionContainer();
-		hermiteFunctions = new HermiteFunctionContainer();
-		interpolationFunctions = new InterpolationFunctionContainer();
-		linearFunctions = new LinearFunctionContainer();
-		ogeeFunctions = new OgeeFunctionContainer();
-		parabolaFunctions = new ParabolaFunctionContainer();
-		pennerFunctions = new PennerFunctionContainer();
-		sigmoidFunctions = new SigmoidFunctionContainer();
-		sinusoidFunctions = new SinusoidFunctionContainer();
-		squareRootFunctions = new SquareRootFunctionContainer();
-		staircaseFunctions = new StaircaseFunctionContainer();
-		stepFunctions = new StepFunctionContainer();
-		windowFunctions = new WindowFunctionContainer();
 		
 		welcome();
 	}
