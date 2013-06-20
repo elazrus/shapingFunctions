@@ -1,8 +1,10 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.cosine.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class CosineFunctionContainer {
+public class CosineFunctionContainer extends FunctionContainer {
+
 	// Blinn Wyvill Cosine Approximation
 	public float function_blinnWyvillCosineApproximation(float x, boolean clamp) {
 		BlinnWyvillCosineApproximation blinnWyvillCosineApproximation = new BlinnWyvillCosineApproximation();

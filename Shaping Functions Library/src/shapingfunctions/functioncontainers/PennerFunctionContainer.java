@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.penner.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class PennerFunctionContainer {
+public class PennerFunctionContainer extends FunctionContainer {
 
 	// Penner Ease In Back
 	public float function_pennerEaseInBack(float x, boolean clamp) {

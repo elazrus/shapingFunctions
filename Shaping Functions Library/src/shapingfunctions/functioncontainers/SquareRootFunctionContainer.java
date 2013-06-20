@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.squareroot.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class SquareRootFunctionContainer {
+public class SquareRootFunctionContainer extends FunctionContainer {
 
 	// Fast Square Root
 	public float function_fastSquareRoot(float x, boolean clamp) {

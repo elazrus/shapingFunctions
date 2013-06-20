@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.window.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class WindowFunctionContainer {
+public class WindowFunctionContainer extends FunctionContainer {
 
 	// Adjustable Center Cosine Window
 	public float function_adjustableCenterCosineWindow(float x, float a, boolean clamp) {

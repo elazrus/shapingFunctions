@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.linear.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class LinearFunctionContainer {
+public class LinearFunctionContainer extends FunctionContainer {
 
 	// Double Linear
 	public float function_doubleLinear(float x, float a, float b, boolean clamp) {

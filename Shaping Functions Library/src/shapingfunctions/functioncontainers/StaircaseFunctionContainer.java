@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.staircase.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class StaircaseFunctionContainer {
+public class StaircaseFunctionContainer extends FunctionContainer {
 
 	// Exponential Smoothed Staircase
 	public float function_exponentialSmoothedStaircase(float x, float a, int n, boolean clamp) {

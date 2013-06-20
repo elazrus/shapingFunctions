@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.ogee.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class OgeeFunctionContainer {
+public class OgeeFunctionContainer extends FunctionContainer {
 
 	// Double Cubic Ogee
 	public float function_doubleCubicOgee(float x, float a, float b, boolean clamp) {

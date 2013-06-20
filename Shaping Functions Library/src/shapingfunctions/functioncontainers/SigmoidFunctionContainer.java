@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.sigmoid.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class SigmoidFunctionContainer {
+public class SigmoidFunctionContainer extends FunctionContainer {
 
 	// Adjustable Center Double Exponential Sigmoid
 	public float function_adjustableCenterDoubleExponentialSigmoid(float x, float a, float b, boolean clamp) {

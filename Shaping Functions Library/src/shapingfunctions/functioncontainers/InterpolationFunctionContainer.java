@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.interpolation.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class InterpolationFunctionContainer {
+public class InterpolationFunctionContainer extends FunctionContainer {
 
 	// Catmull Rom Interpolate
 	public float function_catmullRomInterpolate(float x, float a, float b, boolean clamp) {

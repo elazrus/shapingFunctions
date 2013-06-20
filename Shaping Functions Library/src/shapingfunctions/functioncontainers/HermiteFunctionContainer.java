@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.hermite.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class HermiteFunctionContainer {
+public class HermiteFunctionContainer extends FunctionContainer {
 
 	// Hermite
 	public float function_hermite(float x, float a, float b, float c, float d, boolean clamp) {

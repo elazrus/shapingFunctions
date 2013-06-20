@@ -1,9 +1,10 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.error.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class ErrorFunctionContainer {
-
+public class ErrorFunctionContainer extends FunctionContainer {
+	
 	// Normalized Erf
 	public float function_normalizedErf(float x, boolean clamp) {
 		NormalizedErf normalizedErf = new NormalizedErf();

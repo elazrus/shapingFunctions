@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.gaussian.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class GaussianFunctionContainer {
+public class GaussianFunctionContainer extends FunctionContainer {
 
 	// Adjustable FWHM Half Gaussian
 	public float function_adjustableFwhmHalfGaussian(float x, float a, boolean clamp) {

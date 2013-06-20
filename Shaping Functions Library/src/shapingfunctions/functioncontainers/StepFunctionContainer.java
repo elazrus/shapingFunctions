@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.step.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class StepFunctionContainer {
+public class StepFunctionContainer extends FunctionContainer {
 	
 	// Smoother Step
 	public float function_smootherStep(float x, boolean clamp) {

@@ -1,8 +1,9 @@
 package shapingfunctions.functioncontainers;
 
 import shapingfunctions.functions.gompertz.*;
+import shapingfunctions.library.FunctionContainer;
 
-public class GompertzFunctionContainer {
+public class GompertzFunctionContainer extends FunctionContainer {
 
 	// Gompertz
 	public float function_gompertz(float x, float a, boolean clamp) {
