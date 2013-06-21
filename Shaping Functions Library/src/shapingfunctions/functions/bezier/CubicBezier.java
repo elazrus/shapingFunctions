@@ -8,9 +8,7 @@ public class CubicBezier extends Function {
 	private float a, b, c, d;
 	
 	public CubicBezier() {
-		super();
-			
-		this.a = this.b = this.c = this.d = 0;
+		this(0, 0, 0, 0);
 	}
 	
 	public CubicBezier(float a, float b, float c, float d) {

@@ -4,7 +4,7 @@ import shapingfunctions.functions.step.*;
 import shapingfunctions.library.FunctionContainer;
 
 public class StepFunctionContainer extends FunctionContainer {
-	
+
 	// Smoother Step
 	public float function_smootherStep(float x, boolean clamp) {
 		SmootherStep smootherStep = new SmootherStep();

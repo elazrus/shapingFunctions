@@ -4,7 +4,7 @@ import shapingfunctions.functions.circular.*;
 import shapingfunctions.library.FunctionContainer;
 
 public class CircularFunctionContainer extends FunctionContainer {
-	
+
 	// Circular Arc Through A Point
 	public float function_circularArcThroughAPoint(float x, float a, float b, boolean clamp) {
 		CircularArcThroughAPoint circularArcThroughAPoint = new CircularArcThroughAPoint(a, b);

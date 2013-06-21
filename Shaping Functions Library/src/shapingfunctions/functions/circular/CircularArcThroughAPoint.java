@@ -12,9 +12,7 @@ public class CircularArcThroughAPoint extends Function {
 	private float m_dRadius;
 
 	public CircularArcThroughAPoint() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 
 	public CircularArcThroughAPoint(float a, float b) {

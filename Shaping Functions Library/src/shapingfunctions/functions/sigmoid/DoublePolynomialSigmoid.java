@@ -7,9 +7,7 @@ public class DoublePolynomialSigmoid extends Function {
 	private int n;
 	
 	public DoublePolynomialSigmoid() {
-		super();
-
-		this.n = 0;
+		this(0);
 	}
 	
 	public DoublePolynomialSigmoid(int n) {

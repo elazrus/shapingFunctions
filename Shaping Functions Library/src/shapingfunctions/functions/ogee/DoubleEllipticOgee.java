@@ -8,9 +8,7 @@ public class DoubleEllipticOgee extends Function {
 	private float a, b;
 	
 	public DoubleEllipticOgee() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public DoubleEllipticOgee(float a, float b) {

@@ -8,9 +8,7 @@ public class ExponentialEmphasis extends Function {
 	private float a;
 	
 	public ExponentialEmphasis() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public ExponentialEmphasis(float a) {

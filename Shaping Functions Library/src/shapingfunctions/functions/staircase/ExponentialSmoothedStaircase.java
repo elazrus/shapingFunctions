@@ -8,10 +8,7 @@ public class ExponentialSmoothedStaircase extends Function {
 	private int n;
 	
 	public ExponentialSmoothedStaircase() {
-		super();
-		
-		this.a = 0;
-		this.n = 0;
+		this(0, 0);
 	}
 	
 	public ExponentialSmoothedStaircase(float a, int n)  {

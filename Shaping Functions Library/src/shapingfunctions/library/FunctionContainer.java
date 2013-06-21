@@ -1,7 +1,6 @@
 package shapingfunctions.library;
 
 import java.lang.reflect.Method;
-import java.lang.reflect.Type;
 import java.util.HashMap;
 
 public abstract class FunctionContainer {
@@ -21,11 +20,14 @@ public abstract class FunctionContainer {
 			if (methods.length > 0) {
 				for (int i = 0; i < methods.length; i++) {
 					Method m = methods[i];
-					Type[] paramTypes = m.getGenericExceptionTypes();
-					if (paramTypes.length > 0) {
-						Type lastParamType = paramTypes[paramTypes.length - 1];
-						if (lastParamType.toString().equals("boolean")) {
-							functions.put(m.getName(), m);
+					
+					if (m.getName().contains("function")) {
+						Class<?>[] paramTypes = m.getParameterTypes();
+						if (paramTypes.length > 0) {
+							Class<?> lastParamType = paramTypes[paramTypes.length - 1];
+							if (lastParamType.toString().equals("boolean")) {
+								functions.put(m.getName(), m);
+							}
 						}
 					}
 				}
@@ -35,14 +37,27 @@ public abstract class FunctionContainer {
 			System.out.println(e);
 		}
 	}
+	
+	public String[] getFunctionNames() {
+		return functions.keySet().toArray(new String[0]);
+	}
 
 	private int getNumFunctionArgs(Method method) {
-		Type[] params = method.getGenericParameterTypes();
+		Class<?>[] params = method.getParameterTypes();
 		return params.length;
+	}
+	
+	public int getNumFunctionArgs(String funcName) {
+		Method func = functions.get(funcName);
+		
+		if (func == null) 
+			return 0;
+		
+		return getNumFunctionArgs(func);
 	}
 
 	private boolean functionHasIntegerArg(Method method) {
-		Type[] params = method.getGenericParameterTypes();
+		Class<?>[] params = method.getParameterTypes();
 		int nParams = params.length;
 
 		for (int i = 0; i < nParams; i++) {
@@ -52,6 +67,15 @@ public abstract class FunctionContainer {
 		}
 
 		return false;
+	}
+	
+	public boolean functionHasIntegerArg(String funcName) {
+		Method func = functions.get(funcName);
+		
+		if (func == null)
+			return false;
+		
+		return functionHasIntegerArg(func);
 	}
 	
 	public float function(String funcName, boolean clamp, float x, float a, float b, float c, float d, int n) {

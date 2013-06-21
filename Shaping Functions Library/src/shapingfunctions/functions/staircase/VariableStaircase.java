@@ -8,10 +8,7 @@ public class VariableStaircase extends Function {
 	private int n;
 	
 	public VariableStaircase() {
-		super();
-
-		this.a = 0;
-		this.n = 0;
+		this(0, 0);
 	}
 	
 	public VariableStaircase(float a, int n) {

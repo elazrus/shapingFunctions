@@ -4,7 +4,7 @@ import shapingfunctions.functions.staircase.*;
 import shapingfunctions.library.FunctionContainer;
 
 public class StaircaseFunctionContainer extends FunctionContainer {
-
+	
 	// Exponential Smoothed Staircase
 	public float function_exponentialSmoothedStaircase(float x, float a, int n, boolean clamp) {
 		ExponentialSmoothedStaircase exponentialSmoothedStaircase = new ExponentialSmoothedStaircase(a, n);

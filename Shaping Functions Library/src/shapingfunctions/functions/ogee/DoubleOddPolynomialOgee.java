@@ -9,10 +9,7 @@ public class DoubleOddPolynomialOgee extends Function {
 	private int n;
 	
 	public DoubleOddPolynomialOgee() {
-		super();
-
-		this.a = this.b = 0;
-		this.n = 0;
+		this(0, 0, 0);
 	}
 
 	public DoubleOddPolynomialOgee(float a, float b, int n) {

@@ -4,7 +4,7 @@ import shapingfunctions.functions.sinusoid.*;
 import shapingfunctions.library.FunctionContainer;
 
 public class SinusoidFunctionContainer extends FunctionContainer {
-
+	
 	// Damped Sinusoid
 	public float function_dampedSinusoid(float x, float a, boolean clamp) {
 		DampedSinusoid dampedSinusoid = new DampedSinusoid(a);

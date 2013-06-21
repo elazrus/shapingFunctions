@@ -8,9 +8,7 @@ public class AdjustableCenterCosineWindow extends Function {
 	private float a;
 	
 	public AdjustableCenterCosineWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public AdjustableCenterCosineWindow(float a) {

@@ -8,9 +8,7 @@ public class TukeyWindow extends Function {
 	private float a;
 	
 	public TukeyWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public TukeyWindow(float a) {

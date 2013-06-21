@@ -9,10 +9,7 @@ public class AdjustableCenterSquircularWindow extends Function {
 	private int n;
 	
 	public AdjustableCenterSquircularWindow() {
-		super();
-
-		this.a = 0;
-		this.n = 0;
+		this(0, 0);
 	}
 	
 	public AdjustableCenterSquircularWindow(float a, int n) {

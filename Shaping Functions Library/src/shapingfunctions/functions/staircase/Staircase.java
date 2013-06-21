@@ -7,9 +7,7 @@ public class Staircase extends Function {
 	private int n;
 	
 	public Staircase() {
-		super();
-		
-		this.n = 0;
+		this(0);
 	}
 	
 	public Staircase(int n) {

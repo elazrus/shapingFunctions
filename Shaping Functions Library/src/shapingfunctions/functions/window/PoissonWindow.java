@@ -7,9 +7,7 @@ public class PoissonWindow extends Function {
 	private float a;
 	
 	public PoissonWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public PoissonWindow(float a) {

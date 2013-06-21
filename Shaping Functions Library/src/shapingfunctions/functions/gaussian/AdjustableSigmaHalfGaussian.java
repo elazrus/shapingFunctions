@@ -7,9 +7,7 @@ public class AdjustableSigmaHalfGaussian extends Function {
 	private float a;
 	
 	public AdjustableSigmaHalfGaussian() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public AdjustableSigmaHalfGaussian(float a) {

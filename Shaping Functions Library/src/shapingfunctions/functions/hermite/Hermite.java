@@ -7,9 +7,7 @@ public class Hermite extends Function {
 	private float a, b, c, d;
 	
 	public Hermite() {
-		super();
-			
-		this.a = this.b = this.c = this.d = 0;
+		this(0, 0, 0, 0);
 	}
 	
 	public Hermite(float a, float b, float c, float d) {

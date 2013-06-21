@@ -7,9 +7,7 @@ public class AdjustableFwhmHalfGaussian extends Function {
 	private float a;
 	
 	public AdjustableFwhmHalfGaussian() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public AdjustableFwhmHalfGaussian(float a) {

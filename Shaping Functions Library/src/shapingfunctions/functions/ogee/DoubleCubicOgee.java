@@ -8,9 +8,7 @@ public class DoubleCubicOgee extends Function {
 	private float a, b;
 	
 	public DoubleCubicOgee() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public DoubleCubicOgee(float a, float b) {

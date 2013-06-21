@@ -6,9 +6,7 @@ public class DoubleCubicOgeeSimplified extends Function {
 	private float a, b;
 	
 	public DoubleCubicOgeeSimplified() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public DoubleCubicOgeeSimplified(float a, float b) {

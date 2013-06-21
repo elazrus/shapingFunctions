@@ -8,9 +8,7 @@ public class AdjustableCenterEllipticWindow extends Function {
 	private float a;
 	
 	public AdjustableCenterEllipticWindow() {
-		super();
-
-		this.a = 0;
+		this(0);
 	}
 	
 	public AdjustableCenterEllipticWindow(float a) {

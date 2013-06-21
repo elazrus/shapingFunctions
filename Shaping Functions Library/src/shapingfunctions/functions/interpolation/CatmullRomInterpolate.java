@@ -7,9 +7,7 @@ public class CatmullRomInterpolate extends Function {
 	private float a, b;
 	
 	public CatmullRomInterpolate() {
-		super();
-			
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public CatmullRomInterpolate(float a, float b) {

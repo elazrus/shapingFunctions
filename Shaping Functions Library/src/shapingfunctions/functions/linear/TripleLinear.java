@@ -7,9 +7,7 @@ public class TripleLinear extends Function {
 	private float a, b, c, d;
 	
 	public TripleLinear() {
-		super();
-
-		this.a = this.b = this.c = this.d = 0;
+		this(0, 0, 0, 0);
 	}
 	
 	public TripleLinear(float a, float b, float c, float d) {

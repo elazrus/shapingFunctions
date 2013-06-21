@@ -8,9 +8,7 @@ public class DoubleExponentialOgee extends Function {
 	private float a;
 	
 	public DoubleExponentialOgee() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public DoubleExponentialOgee(float a) {

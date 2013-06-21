@@ -8,9 +8,7 @@ public class Gompertz extends Function {
 	private float a;
 	
 	public Gompertz() {
-		super();
-		
-		this.a = 0;
+		this(0);
 	}
 	
 	public Gompertz(float a) {

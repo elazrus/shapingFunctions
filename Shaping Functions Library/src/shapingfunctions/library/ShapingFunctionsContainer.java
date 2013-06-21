@@ -85,7 +85,7 @@ public class ShapingFunctionsContainer {
 	 */
 	public ShapingFunctionsContainer(PApplet theParent) {
 		myParent = theParent;
-		
+
 		welcome();
 	}
 	
@@ -112,64 +112,30 @@ public class ShapingFunctionsContainer {
 	}
 	
 	private FunctionContainer findContainer(String funcName) {
-		if (inContainer(bezierFunctions, funcName))
-			return bezierFunctions;
-		
-		if (inContainer(circularFunctions, funcName))
-			return circularFunctions;
-		
-		if (inContainer(cosineFunctions, funcName))
-			return cosineFunctions;
-		
-		if (inContainer(errorFunctions, funcName))
-			return errorFunctions;
-		
-		if (inContainer(exponentFunctions, funcName))
-			return exponentFunctions;
-		
-		if (inContainer(gaussianFunctions, funcName))
-			return gaussianFunctions;
-		
-		if (inContainer(gompertzFunctions, funcName))
-			return gompertzFunctions;
-		
-		if (inContainer(hermiteFunctions, funcName))
-			return hermiteFunctions;
-		
-		if (inContainer(interpolationFunctions, funcName))
-			return interpolationFunctions;
-		
-		if (inContainer(linearFunctions, funcName))
-			return linearFunctions;
-		
-		if (inContainer(ogeeFunctions, funcName))
-			return ogeeFunctions;
-		
-		if (inContainer(parabolaFunctions, funcName))
-			return parabolaFunctions;
-		
-		if (inContainer(pennerFunctions, funcName))
-			return pennerFunctions;
-		
-		if (inContainer(sigmoidFunctions, funcName))
-			return sigmoidFunctions;
-		
-		if (inContainer(sinusoidFunctions, funcName))
-			return sinusoidFunctions;
-		
-		if (inContainer(squareRootFunctions, funcName))
-			return squareRootFunctions;
-		
-		if (inContainer(staircaseFunctions, funcName))
-			return staircaseFunctions;
-		
-		if (inContainer(stepFunctions, funcName))
-			return stepFunctions;
-		
-		if (inContainer(windowFunctions, funcName))
-			return windowFunctions;
+		for (FunctionContainer fc : allContainers) {
+			if (inContainer(fc, funcName))
+				return fc;
+		}
 		
 		return null;
+	}
+	
+	public int getNumFunctionArgs(String funcName) {
+		FunctionContainer functionContainer = findContainer(funcName);
+		
+		if (functionContainer == null) 
+			return 0;
+		
+		return functionContainer.getNumFunctionArgs(funcName);
+	}
+	
+	public boolean functionHasIntegerArg(String funcName) {
+		FunctionContainer functionContainer = findContainer(funcName);
+		
+		if (functionContainer == null) 
+			return false;
+		
+		return functionContainer.functionHasIntegerArg(funcName);
 	}
 	
 	public float function(String funcName, boolean clamp, float x, float a, float b, float c, float d, int n) {

@@ -9,10 +9,7 @@ public class QuadraticBezierStaircase extends Function {
 	private int n;
 	
 	public QuadraticBezierStaircase() {
-		super();
-
-		this.a = 0;
-		this.n = 0;
+		this(0, 0);
 	}
 	
 	public QuadraticBezierStaircase(float a, int n) {

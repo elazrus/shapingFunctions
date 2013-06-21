@@ -8,9 +8,7 @@ public class AdjustableCenterDoubleExponentialSigmoid extends Function {
 	private float a, b;
 	
 	public AdjustableCenterDoubleExponentialSigmoid() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public AdjustableCenterDoubleExponentialSigmoid(float a, float b) {

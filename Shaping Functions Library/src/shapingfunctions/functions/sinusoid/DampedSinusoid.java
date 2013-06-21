@@ -7,9 +7,7 @@ public class DampedSinusoid extends Function {
 	private float a;
 	
 	public DampedSinusoid() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public DampedSinusoid(float a) {

@@ -8,9 +8,7 @@ public class DoubleExponentialSigmoid extends Function {
 	private float a;
 	
 	public DoubleExponentialSigmoid() {
-		super();
-
-		this.a = 0;
+		this(0);
 	}
 	
 	public DoubleExponentialSigmoid(float a) {

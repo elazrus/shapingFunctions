@@ -7,9 +7,7 @@ public class DoubleCircularSigmoid extends Function {
 	private float a;
 	
 	public DoubleCircularSigmoid() {
-		super();
-
-		this.a = 0;
+		this(0);
 	}
 	
 	public DoubleCircularSigmoid(float a) {

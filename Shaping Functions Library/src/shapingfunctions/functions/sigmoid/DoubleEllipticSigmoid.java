@@ -7,9 +7,7 @@ public class DoubleEllipticSigmoid extends Function {
 	private float a, b;
 	
 	public DoubleEllipticSigmoid() {
-		super();
-
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public DoubleEllipticSigmoid(float a, float b) {

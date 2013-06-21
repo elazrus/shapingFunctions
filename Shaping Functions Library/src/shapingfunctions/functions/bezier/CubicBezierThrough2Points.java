@@ -8,9 +8,7 @@ public class CubicBezierThrough2Points extends Function {
 	private float a, b, c, d;
 	
 	public CubicBezierThrough2Points() {
-		super();
-			
-		this.a = this.b = this.c = this.d;
+		this(0, 0, 0, 0);
 	}
 	
 	public CubicBezierThrough2Points(float a, float b, float c, float d) {

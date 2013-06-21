@@ -8,9 +8,7 @@ public class GeneralizedTriangleWindow extends Function {
 	private float a;
 	
 	public GeneralizedTriangleWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public GeneralizedTriangleWindow(float a) {

@@ -9,10 +9,7 @@ public class AdjustableCenterHyperellipticWindow extends Function {
 	private int n;
 	
 	public AdjustableCenterHyperellipticWindow() {
-		super();
-
-		this.a = 0;
-		this.n = 0;
+		this(0, 0);
 	}
 	
 	public AdjustableCenterHyperellipticWindow(float a, int n) {

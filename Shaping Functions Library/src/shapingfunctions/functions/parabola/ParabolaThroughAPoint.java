@@ -8,9 +8,7 @@ public class ParabolaThroughAPoint extends Function {
 	private float a, b;
 	
 	public ParabolaThroughAPoint() {
-		super();
-			
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public ParabolaThroughAPoint(float a, float b) {

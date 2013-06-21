@@ -7,9 +7,7 @@ public class HannPoissonWindow extends Function {
 	private float a;
 	
 	public HannPoissonWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public HannPoissonWindow(float a) {

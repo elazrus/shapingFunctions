@@ -7,9 +7,7 @@ public class HalfGaussianThroughAPoint extends Function {
 	private float a, b;
 	
 	public HalfGaussianThroughAPoint() {
-		super();
-			
-		this.a = this.b = 0;
+		this(0, 0);
 	}
 	
 	public HalfGaussianThroughAPoint(float a, float b) {

@@ -8,9 +8,7 @@ public class GeneralizedBlackmanWindow extends Function {
 	private float a;
 	
 	public GeneralizedBlackmanWindow() {
-		super();
-			
-		this.a = 0;
+		this(0);
 	}
 	
 	public GeneralizedBlackmanWindow(float a) {
